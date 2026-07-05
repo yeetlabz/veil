@@ -96,4 +96,4 @@ MIT — do whatever you like with it.
 
 ---
 
-<p align="center">Built by <a href="https://github.com/yeetlabs">YeetLabs</a></p>
+<p align="center">Built by <a href="https://github.com/yeetlabz">YeetLabz</a></p>
