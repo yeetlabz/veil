@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veil — Privacy Policy</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.05rem; margin-top: 2rem; }
+    p, li { font-size: 0.95rem; color: #333; }
+    a { color: #7c3aed; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+
+<h1>Veil — Privacy Policy</h1>
+<p class="updated">Last updated: July 2025</p>
+
+<p>Veil is a Chrome extension that automatically removes matching entries from your browsing history and optionally redirects sensitive sites to an incognito window. This policy explains what data the extension accesses and how it is handled.</p>
+
+<h2>Data we collect</h2>
+<p><strong>None.</strong> Veil does not collect, transmit, or share any personal data. No analytics, no telemetry, no external servers are involved.</p>
+
+<h2>Data stored locally</h2>
+<p>Veil stores the following data <strong>only on your device</strong> using Chrome's built-in storage APIs:</p>
+<ul>
+  <li><strong>Keywords</strong> — the list of keywords and domains you add, stored via <code>chrome.storage.sync</code>. Chrome may sync this across your signed-in devices, but it never leaves Google's infrastructure.</li>
+  <li><strong>Last scan metadata</strong> — a timestamp and count of the most recent history clean (stored via <code>chrome.storage.local</code>). This is used only to display the "last cleaned" status in the popup.</li>
+</ul>
+
+<h2>Permissions used</h2>
+<ul>
+  <li><strong>history</strong> — to search your browsing history for matching URLs and delete them.</li>
+  <li><strong>storage</strong> — to save your keywords across browser sessions.</li>
+  <li><strong>tabs</strong> — to detect when you navigate to a matching URL so it can be deleted in real time, and to redirect matching sites to an incognito window.</li>
+</ul>
+<p>These permissions are used solely for the features described above and are not used to collect or transmit any information.</p>
+
+<h2>Third parties</h2>
+<p>Veil does not communicate with any third-party service, API, or server. All processing happens entirely within your browser.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at the same URL. Continued use of the extension after changes constitutes acceptance.</p>
+
+<h2>Contact</h2>
+<p>Questions? Open an issue on <a href="https://github.com/yeetlabs/chromeCleaner">GitHub</a>.</p>
+
+</body>
+</html>

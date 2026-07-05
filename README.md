@@ -1,0 +1,99 @@
+# Veil
+
+A Chrome extension that silently removes matching entries from your browsing history in real time, and optionally redirects sensitive sites to an incognito window — with no cloud sync, no accounts, and no data leaving your browser.
+
+---
+
+## Features
+
+- **Real-time history deletion** — as soon as you visit a URL matching a keyword, it is removed from history automatically
+- **Per-keyword incognito redirect** — choose which keywords open in a private incognito window instead of your normal browser
+- **Backfill scan on add** — when you add a new keyword, Veil immediately scans and cleans your existing history
+- **Smart domain matching** — adding `facebook.com` also catches search queries like `?q=facebook` on Google, Presearch, and others
+- **Manual scan** — trigger a full history scan at any time with one click
+
+---
+
+## Installation
+
+Veil is not on the Chrome Web Store. Install it manually in a few steps.
+
+**1. Download the extension**
+
+Click the green **Code** button on this page and choose **Download ZIP**. Extract the folder somewhere permanent on your computer.
+
+**2. Open Chrome Extensions**
+
+Go to `chrome://extensions` in your address bar.
+
+**3. Enable Developer Mode**
+
+Toggle **Developer mode** on using the switch in the top-right corner.
+
+**4. Load the extension**
+
+Click **Load unpacked** and select the folder you extracted.
+
+**5. Pin it**
+
+Click the puzzle piece icon in the Chrome toolbar and pin **Veil** so it's always one click away.
+
+---
+
+## How to use
+
+### Adding keywords
+
+Type a keyword or domain into the input field and press **Enter** or click **+**.
+
+- Use a full domain like `facebook.com` to block visits to the site and catch any search engine query containing the site name
+- Use a plain word like `facebook` to catch any URL or page title containing that word
+- Keywords are case-insensitive
+
+When you add a keyword, Veil immediately scans your existing history and removes any matching entries.
+
+### Per-keyword incognito redirect
+
+Each keyword chip has an eye icon. Click it to toggle incognito redirect for that keyword.
+
+- **Eye open (glowing)** — when you navigate to a URL matching this keyword, it automatically reopens in a new incognito window and the original tab is closed
+- **Eye slashed (dim)** — history deletion only, no redirect
+
+> No extension permissions are required for incognito windows. Veil opens them on your behalf without needing the "Allow in Incognito" setting.
+
+### Manual scan
+
+Click **Scan all history** to immediately run a full scan of your entire Chrome history against all keywords. Useful after adding several keywords at once, or if you suspect something was missed.
+
+### Removing a keyword
+
+Click the **×** button on any keyword chip to remove it. Veil will no longer clean or redirect URLs matching that keyword. Past history that was already deleted is not restored.
+
+---
+
+## Privacy
+
+- All data (keywords, settings) is stored in `chrome.storage.sync` — synced across your signed-in Chrome browsers, never sent anywhere else
+- No analytics, no tracking, no external servers
+- The extension requires the following Chrome permissions:
+  - `history` — to search and delete history entries
+  - `storage` — to save your keywords and settings
+  - `tabs` — to detect navigation and redirect to incognito
+
+---
+
+## Notes
+
+- History synced from your Android device via Google account will also be cleaned once it arrives on desktop Chrome, since `onVisited` fires for synced entries
+- Incognito pages are never added to Chrome history so they are not scanned
+- The extension does not run on Android Chrome as Chrome for Android does not support extensions
+
+---
+
+## License
+
+MIT — do whatever you like with it.
+
+---
+
+<p align="center">Built by <a href="https://github.com/yeetlabs">YeetLabs</a></p>
