@@ -2,6 +2,15 @@
 
 A Chrome extension that silently removes matching entries from your browsing history in real time, and optionally redirects sensitive sites to an incognito window — with no cloud sync, no accounts, and no data leaving your browser.
 
+<p align="center">
+  <a href="https://chrome.google.com/webstore/detail/ceppnmfofaalcepfpohalgdfcofhflgc">
+    <img src="https://img.shields.io/chrome-web-store/v/ceppnmfofaalcepfpohalgdfcofhflgc?label=Chrome%20Web%20Store&logo=google-chrome&logoColor=white&color=4285F4" alt="Chrome Web Store" />
+  </a>
+  <a href="https://chrome.google.com/webstore/detail/ceppnmfofaalcepfpohalgdfcofhflgc">
+    <img src="https://img.shields.io/chrome-web-store/users/ceppnmfofaalcepfpohalgdfcofhflgc?label=users&color=a855f7" alt="Chrome Web Store Users" />
+  </a>
+</p>
+
 ---
 
 ## Features
@@ -16,11 +25,13 @@ A Chrome extension that silently removes matching entries from your browsing his
 
 ## Installation
 
-Veil is not on the Chrome Web Store. Install it manually in a few steps.
+**[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/ceppnmfofaalcepfpohalgdfcofhflgc)**
+
+Or install manually:
 
 **1. Download the extension**
 
-Click the green **Code** button on this page and choose **Download ZIP**. Extract the folder somewhere permanent on your computer.
+Go to [Releases](../../releases) and download `veil-extension.zip`. Extract the folder somewhere permanent on your computer.
 
 **2. Open Chrome Extensions**
 
